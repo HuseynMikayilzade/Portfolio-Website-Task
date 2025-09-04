@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="My Portfolio Website" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <h1 class="logo">MyPortfolio</h1>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button id="darkModeBtn" title="Toggle Dark Mode">
+                <i class="fas fa-moon"></i>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <img src="images/pp.jpg" alt="Profile photo" class="profile-img" />
+            <h2>Hi, I'm <span>Huseyn</span> 👋</h2>
+            <p>Passionate back-end developer specializing in <b>C#</b> and <b>.NET</b> technologies.</p>
+            <a href="#projects" class="btn">View My Work</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+        <h2 class="section-title">About Me</h2>
+        <p class="section-text">
+            I'm a software developer focusing on building scalable and maintainable applications 
+            using modern technologies. I enjoy solving problems and learning new tools.
+        </p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects section">
+        <h2 class="section-title">Projects</h2>
+        <div class="project-list">
+            <div class="project-card">
+                <img src="images/logistics.png" alt="Project 1 Screenshot" />
+                <div class="card-content">
+                    <h3>Logistics API</h3>
+                    <p>Built a logistics API using .NET, Entity Framework, and SQL Server.</p>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="images/lms.jpg" alt="Project 2 Screenshot" />
+                <div class="card-content">
+                    <h3>Learning Management System</h3>
+                    <p>Developed a platform for managing courses, students, and instructors.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+        <h2 class="section-title">Contact Me</h2>
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Your Name" required />
+            <input type="email" id="email" placeholder="Your Email" required />
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+        <p id="formStatus"></p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 My Portfolio | All Rights Reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
